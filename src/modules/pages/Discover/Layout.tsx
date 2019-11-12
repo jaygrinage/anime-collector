@@ -7,9 +7,10 @@ interface DiscoverPageLayoutProps {
 }
 
 const DiscoverPageLayout: React.FC<DiscoverPageLayoutProps> = ({ animeList }) => {
+  console.log(animeList)
   return (
     <div>
-      {animeList.map(anime => <div>{anime}</div>)}
+      {animeList.map(anime => <div>{anime.title}</div>)}
     </div>
   )
 }

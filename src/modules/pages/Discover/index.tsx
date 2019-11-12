@@ -12,7 +12,7 @@ const DiscoverPage = () => {
 
   useEffect(() => {
     getAnimeList();
-  })
+  }, [])
 
   const getAnimeList = async () => {
     const response = await axios.get(API);
