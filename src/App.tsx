@@ -1,30 +1,12 @@
-import React, {useState} from 'react';
-import axios from 'axios';
+import React from 'react';
+import './App.css';
 
-const App= () => {
+import { DiscoverPage } from 'modules/pages';
 
-  const [Images, setImages] = useState<any>([])
-
-   const callApi = async ( ) => {
-    const response = await axios.get(
-      "https://api.jikan.moe/v3/search/anime?q=bleach&limit=10"
-    );
-
-    console.log(response)
-
-
-    const filteredResults = response.data.results.filter(anime => anime.rated !== "Rx")
-
-    setImages(filteredResults);
-  }
-  // console.log(Images)
-
+const App: React.FC = () => {
   return (
-    <div >
-        <button onClick={callApi}>Test Api</button>
-
-       {Images.map((pics, index) => <img key={index} src={pics.image_url} />)}
-
+    <div className="App">
+      <DiscoverPage />
     </div>
   );
 }
