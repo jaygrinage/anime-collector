@@ -4,9 +4,9 @@ export enum stuff {
 }
 
 export interface Anime {
-    id: number,
+    mal_id: number,
     title: string,
-    imageURL: string,
+    image_url: string,
     url: string,
     synopsis: string
 }

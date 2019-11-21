@@ -5,19 +5,25 @@ import { MainLayout } from 'modules/layouts';
 // import { Anime } from 'modules/types';
 import DiscoverPageLayout from './Layout';
 
-const API = "https://api.jikan.moe/v3/search/anime?q=bleach&limit=10";
+
+
 
 const DiscoverPage = () => {
   const [animeList, setAnimeList] = useState<any>([]);
 
   useEffect(() => {
-    getAnimeList();
+    getAnimeList("bleach");
   }, [])
 
-  const getAnimeList = async () => {
+  const getAnimeList = async (query) => {
+    const API = `https://api.jikan.moe/v3/search/anime?q=${query}&limit=12`;
     const response = await axios.get(API);
 
     console.log(response);
+    // const arr1 = [1,2,3];
+    // const arr2 = [4,5,6];
+
+    // console.log([...arr1,...arr2]);
 
     const filteredResults = response.data.results.filter(
       anime => anime.rated !== "Rx"
@@ -27,7 +33,10 @@ const DiscoverPage = () => {
 
     return (
       <MainLayout>
-        <DiscoverPageLayout animeList={animeList}/>
+          <DiscoverPageLayout
+            getAnimeList={getAnimeList}
+            animeList={animeList}
+          />
       </MainLayout>
     );
 }

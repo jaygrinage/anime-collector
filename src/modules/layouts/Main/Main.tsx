@@ -8,11 +8,11 @@ interface MainLayoutProps {
 
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
     return (
-        <div className={styles.mainLayout}>
-            <Header />
-            {children}
-        </div>
-    )
+      <div className={styles.mainLayout}>
+        <Header />
+        {children}
+      </div>
+    );
 }
 
 export default MainLayout;

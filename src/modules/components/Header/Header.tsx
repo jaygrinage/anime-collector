@@ -12,7 +12,7 @@ const Header = () => {
           padding: "0 20px"
         }}
       >
-        header
+        ANIME FINDER
       </div>
     );
 }
