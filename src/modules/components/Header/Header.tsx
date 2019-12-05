@@ -1,18 +1,9 @@
 import React from "react";
+// import './Header.module.css';
 
 const Header = () => {
     return (
-      <div
-        style={{
-          height: "70px",
-          backgroundColor: "#43e895",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "0 20px"
-        }}
-      >
-        ANIME FINDER
+      <div>
       </div>
     );
 }

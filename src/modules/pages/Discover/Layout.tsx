@@ -32,33 +32,37 @@ const DiscoverPageLayout: React.FC<DiscoverPageLayoutProps> = ({ animeList, getA
 
   return (
     <>
-    <div className="searchBar">
-      <input type="text" value={AnimeText} onChange={getText} />
-      <button onClick={onHandleSearchClick}>SEARCH</button>
-    </div>
+      <div className="searchBar">
+        <input type="text" value={AnimeText} onChange={getText} />
+        <button
+          className="btn btnWhite btnAnimated"
+          onClick={onHandleSearchClick}
+        >
+          SEARCH
+        </button>
+      </div>
 
-    <div className="content">
-      <section className="sectionLeft">
-        {animeList.map(anime => (
-          <React.Fragment key={anime.mal_id}>
-            <Card
-              title={anime.title}
-              image={anime.image_url}
-              text={anime.synopsis}
-              handleAddClick={onHandleAddClick}
-            ></Card>
-          </React.Fragment>
-        ))}
-      </section>
+      <div className="content">
+        <section className="sectionLeft">
+          {animeList.map(anime => (
+            <React.Fragment key={anime.mal_id}>
+              <Card
+                title={anime.title}
+                image={anime.image_url}
+                text={anime.synopsis}
+                handleAddClick={onHandleAddClick}
+              ></Card>
+            </React.Fragment>
+          ))}
+        </section>
 
-          <section className="sectionRight">
-            {MyAnimeList.map((item, index) => <div key={index}>{item}</div>)}
-          </section>
-          
-    </div>
-
-
-
+        <section className="sectionRight">
+          <h1 className="animeListStyle">ANIME LIST</h1>
+          {MyAnimeList.map((item, index) => (
+            <div key={index}>{item}</div>
+          ))}
+        </section>
+      </div>
     </>
   );
 }
