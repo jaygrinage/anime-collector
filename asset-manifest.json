@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/anime-collector/static/css/main.0816f6a7.chunk.css",
+    "main.js": "/anime-collector/static/js/main.1cb81a5c.chunk.js",
+    "main.js.map": "/anime-collector/static/js/main.1cb81a5c.chunk.js.map",
+    "runtime-main.js": "/anime-collector/static/js/runtime-main.b1b53378.js",
+    "runtime-main.js.map": "/anime-collector/static/js/runtime-main.b1b53378.js.map",
+    "static/js/2.d7dd292f.chunk.js": "/anime-collector/static/js/2.d7dd292f.chunk.js",
+    "static/js/2.d7dd292f.chunk.js.map": "/anime-collector/static/js/2.d7dd292f.chunk.js.map",
+    "index.html": "/anime-collector/index.html",
+    "precache-manifest.973ff7c1e0401370ab1d19accabb3730.js": "/anime-collector/precache-manifest.973ff7c1e0401370ab1d19accabb3730.js",
+    "service-worker.js": "/anime-collector/service-worker.js",
+    "static/css/main.0816f6a7.chunk.css.map": "/anime-collector/static/css/main.0816f6a7.chunk.css.map",
+    "static/media/Main.css": "/anime-collector/static/media/steins-gate.346ef05c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b1b53378.js",
+    "static/js/2.d7dd292f.chunk.js",
+    "static/css/main.0816f6a7.chunk.css",
+    "static/js/main.1cb81a5c.chunk.js"
+  ]
+}
