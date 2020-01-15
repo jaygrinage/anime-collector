@@ -10,13 +10,13 @@
 }
 
 .header {
-    height: 100%;
+    height: 100vh;
     background-image: linear-gradient(to right bottom, 
     rgba(229, 240, 70, 0.651), 
     rgba(231, 184, 56, 0.658)), 
     url(../../anime/steins-gate.jpg);
     background-repeat:no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     background-position: top; 
     position: relative;
    

@@ -13,6 +13,7 @@
 
 .sectionRight {
     flex: 1;
+    color: red;
 }
 
 .searchBar {
